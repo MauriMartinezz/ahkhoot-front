@@ -59,11 +59,11 @@ Luego, una vez asegurado que esta listo para produccion, se integra con Master c
 Ocurren cuando se integran commits de distintas fuentes
 Son cambios contradictorios que git no puede diferenciar cual es correcto 
 
-- git pull
-- git merge 
-- git rebase
-- git cherry-pick
-- git stash apply
+> - git pull
+> - git merge 
+> - git rebase
+> - git cherry-pick
+> - git stash apply
 
 #### Empezar de nuevo deshaciendo un conflicto
     - git merge --abort
@@ -75,22 +75,22 @@ git commit --amend -m "nuevo mensaje"
 
 ### Agregar archivos al ultimo commit
 
-git add **nombreDelArchivo**
-git commit --amend HEAD~1
+> git add **nombreDelArchivo**
+> git commit --amend HEAD~1
 
 ### Deshacer commit
 
-git reset --soft HEAD~1
+> git reset --soft HEAD~1
 
 ### Deshacer commit y cambios
 
-git reset --hard HEAD~1
+> git reset --hard HEAD~1
 
 * siendo 1 la cantidad de commits hacia atras que queres ir
 * HEAD~3 va a volver 3 commits hacia atras
 
 ### Deshacer merge commit que ya fue pusheado a la rama remota
 
-git rever -m 1 <id_commit>
+> git revert -m 1 <id_commit>
 
 * con git log se puede ver los ids de los commits
