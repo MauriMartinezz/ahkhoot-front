@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './core/auth/login/login.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent],
@@ -17,7 +18,8 @@ import { environment } from '../environments/environment';
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
