@@ -1,0 +1,11 @@
+@import './../../../app.component.scss';
+.header{
+    background-color: $card-bg-color;
+    height: 80px;
+    padding: 0px;
+    .header__title {
+        h3{
+            font-weight: $extrabold ;
+        }
+    }
+}

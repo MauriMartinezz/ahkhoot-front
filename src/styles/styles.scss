@@ -6,3 +6,11 @@
 @import './layout/media-queries';
 
 @import './themes/light';
+
+*{
+    font-family: $family;
+    font-weight: $normal;
+    color: $text-primary-color;
+    padding: 0;
+    margin: 0;
+}
