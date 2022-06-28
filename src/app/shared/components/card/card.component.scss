@@ -1,0 +1,11 @@
+@import './../../../app.component.scss';
+
+.card{
+  border-radius: $border-radius;
+  background-color: $dark-accent;
+  color: $white;
+  box-shadow: 0px 2px 10px $dark-shadow;
+}
+.separator{
+  width: 60%;
+}

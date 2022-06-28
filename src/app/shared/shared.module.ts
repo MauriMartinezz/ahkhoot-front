@@ -7,8 +7,13 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { CardComponent } from './components/card/card.component';
 
 @NgModule({
-  declarations: [FooterComponent, HeaderComponent, SidebarComponent, CardComponent],
+  declarations: [
+    FooterComponent,
+    HeaderComponent,
+    SidebarComponent,
+    CardComponent
+  ],
   imports: [CommonModule, RouterModule],
-  exports: [HeaderComponent, SidebarComponent, FooterComponent]
+  exports: [HeaderComponent, SidebarComponent, FooterComponent, CardComponent]
 })
 export class SharedModule {}
