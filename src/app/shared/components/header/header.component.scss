@@ -1,11 +1,25 @@
 @import './../../../app.component.scss';
-.header{
-    background-color: $card-bg-color;
-    height: 80px;
-    padding: 0px;
-    .header__title {
-        h3{
-            font-weight: $extrabold ;
-        }
+
+.spacer{
+  flex: 1 1 auto;
+}
+.navbar{
+  background: $light;
+  .navbar-brand, .nav-link{
+    color: $dark;
+  }
+  .nav__form{
+    .form-control{
+      background-color: $dark-accent;
+      border: none;
+      transition: background 300ms;
+      &:focus{
+        color: $dark;
+        background-color: white;
+      }
     }
+    ::placeholder{
+      color: white;
+    }
+  }
 }

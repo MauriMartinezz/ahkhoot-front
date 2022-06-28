@@ -1,6 +1,37 @@
-<header class="header">
-  <div class="header__title">
-    <h3 class="bg-primary">Trivias App</h3>
+<nav class="navbar navbar-expand bg-light">
+  <div class="container-fluid">
+    <a
+      class="navbar-brand"
+      routerLink="/"
+      >Trivias App</a
+    >
+    <div class="spacer"></div>
+    <form
+      class="d-flex nav__form"
+      role="search">
+      <input
+        class="form-control me-2"
+        type="search"
+        placeholder="Buscar sala"
+        aria-label="Buscar sala" />
+    </form>
+    <div class="spacer"></div>
+
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="/"
+          >Home</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="dashboard"
+          >Dashboard</a
+        >
+      </li>
+    </ul>
   </div>
-  <div class="header__body"></div>
-</header>
+</nav>
