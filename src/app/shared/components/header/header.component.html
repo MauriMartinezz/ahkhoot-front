@@ -7,10 +7,10 @@
     >
     <div class="spacer"></div>
     <form
-      class="d-flex nav__form"
+      class="d-flex nav__form b-none"
       role="search">
       <input
-        class="form-control me-2"
+        class="form-control me-2 text-dark bg-light b-none"
         type="search"
         placeholder="Buscar sala"
         aria-label="Buscar sala" />
@@ -31,6 +31,13 @@
           routerLink="dashboard"
           >Dashboard</a
         >
+      </li>
+      <li class="nav-item">
+        <button
+          type="button"
+          class="btn btn-dark text-white nav-link">
+          Log out
+        </button>
       </li>
     </ul>
   </div>
