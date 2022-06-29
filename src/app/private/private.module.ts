@@ -5,8 +5,10 @@ import { CommonModule } from '@angular/common';
 import { PrivateRoutingModule } from './private-routing.module';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
+import { SwiperModule } from 'swiper/angular';
+
 @NgModule({
   declarations: [DashboardComponent],
-  imports: [CommonModule, PrivateRoutingModule, SharedModule]
+  imports: [CommonModule, PrivateRoutingModule, SharedModule, SwiperModule]
 })
 export class PrivateModule {}

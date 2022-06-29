@@ -2,3 +2,33 @@
   color: #ffffff;
   font-size: 2.5rem;
 }
+
+@import "~swiper/css";
+@import "~swiper/css/pagination";
+@import "~swiper/css/navigation";
+
+
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-pagination{
+  top: calc(100% - 20px);
+}
+

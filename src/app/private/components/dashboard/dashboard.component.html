@@ -1,8 +1,63 @@
 <section class="row">
   <h2 class="section__title">Partidas recientes</h2>
-  <app-card class="col-xs-12 col-sm-6 col-md-4"></app-card>
-  <app-card class="col-xs-12 col-sm-6 col-md-4"></app-card>
-  <app-card class="col-xs-12 col-sm-6 col-md-4"></app-card>
-  <app-card class="col-xs-12 col-sm-6 col-md-4"></app-card>
-  <app-card class="col-xs-12 col-sm-6 col-md-4"></app-card>
+
+  <swiper
+    [slidesPerView]="3"
+    [spaceBetween]="20"
+    [slidesPerGroup]="3"
+    [loop]="true"
+    [loopFillGroupWithBlank]="true"
+    [pagination]="{ clickable: true }"
+    [scrollbar]="{ draggable: true }"
+    class="mySwiper">
+    <ng-template swiperSlide>
+      <app-card
+        [cardName]="'Card 0'"
+        [charactersLimit]="caractersLimit"
+        [cardDesc]="exampleText"
+        class=""></app-card> </ng-template
+    ><ng-template swiperSlide>
+      <app-card
+        [cardName]="'Card 1'"
+        [charactersLimit]="caractersLimit"
+        [cardDesc]="exampleText"
+        class=""></app-card> </ng-template
+    ><ng-template swiperSlide>
+      <app-card
+        [cardName]="'Card 2'"
+        [charactersLimit]="caractersLimit"
+        [cardDesc]="exampleText"
+        class=""></app-card> </ng-template
+    ><ng-template swiperSlide>
+      <app-card
+        [cardName]="'Card 3'"
+        [charactersLimit]="caractersLimit"
+        [cardDesc]="exampleText"
+        class=""></app-card> </ng-template
+    ><ng-template swiperSlide>
+      <app-card
+        [cardName]="'Card 4'"
+        [charactersLimit]="caractersLimit"
+        [cardDesc]="exampleText"
+        class=""></app-card> </ng-template
+    ><ng-template swiperSlide>
+      <app-card
+        [cardName]="'Card 5'"
+        [charactersLimit]="caractersLimit"
+        [cardDesc]="exampleText"
+        class=""></app-card> </ng-template
+    ><ng-template swiperSlide>
+      <app-card
+        [cardName]="'Card 6'"
+        [charactersLimit]="caractersLimit"
+        [cardDesc]="exampleText"
+        class=""></app-card> </ng-template
+    ><ng-template swiperSlide>
+      <app-card
+        [cardName]="'card 8'"
+        [charactersLimit]="caractersLimit"
+        [cardDesc]="exampleText"
+        class=""></app-card>
+    </ng-template> </swiper
+  >`
 </section>

@@ -1,10 +1,9 @@
 <div class="card m-3">
-  <h5 class="card-header px-3 py-3 border-dark">Card title</h5>
+  <h5 class="card-header px-3 py-3 border-dark">{{ cardName }}</h5>
   <div class="card-body">
     <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
     <p class="card-text">
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+      {{ cardDesc | truncate: charactersLimit }}
     </p>
   </div>
   <div class="border-dark d-flex justify-content-evenly p-3">

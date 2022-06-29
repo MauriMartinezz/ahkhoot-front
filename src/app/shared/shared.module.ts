@@ -5,15 +5,17 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { CardComponent } from './components/card/card.component';
-
+import { SwiperModule } from 'swiper/angular';
+import { TruncatePipe } from './pipes/truncate.pipe';
 @NgModule({
   declarations: [
     FooterComponent,
     HeaderComponent,
     SidebarComponent,
-    CardComponent
+    CardComponent,
+    TruncatePipe
   ],
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, SwiperModule],
   exports: [HeaderComponent, SidebarComponent, FooterComponent, CardComponent]
 })
 export class SharedModule {}
