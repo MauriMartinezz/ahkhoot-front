@@ -4,21 +4,21 @@
   flex: 1 1 auto;
 }
 .navbar{
-  background: $light;
+  background: $dark-accent;
   .navbar-brand, .nav-link{
-    color: $dark;
+    color: $white;
   }
   .nav__form{
     .form-control{
-      border: none;
-      border-bottom: 2px solid $dark-accent;
-      margin-bottom:-2px;
-      border-radius: 0px;
+      border: 0px;
+      border-bottom: 3px solid $dark-accent;
+      margin-bottom:-3px;
+      border-radius: 10px;
       box-shadow: none;
       transition: border-bottom 300ms ease-in-out;
     }
     :focus{
-    border-bottom: 2px solid $accent;
+    border-bottom: 3px solid $accent;
     }
 
   }

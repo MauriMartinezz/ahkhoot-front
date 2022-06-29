@@ -1,0 +1,15 @@
+@import './../../../app.component.scss';
+.sidebar{
+  display: flex;
+  height: calc(100vh - 50px);
+  max-height: 100vh;
+  flex-wrap: nowrap;
+  width: 200px;
+  position: fixed;
+  left: 0;
+  background-color: $dark-accent;
+  .list-group{
+    border-radius: 0;
+  }
+
+}
